@@ -15,12 +15,12 @@ footer { width: 100%}
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-	background-color: #339;
+	background-color: black;
 	color: #E1E1E1;
 	font-size: 1.25em;
 }
 
-#header a {color: #E1E1E1; text-decoration: none;}
+#header a {color: #E1E1E1; text-decoration: none; font-size:larger}
 #header a:hover { color: white;}
 
 /*** Main Content ***/
