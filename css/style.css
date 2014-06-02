@@ -153,10 +153,17 @@ footer {
 /* Identifier Selectors*/
 
 
-#news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
+#home_slide, #news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
     overflow: hidden;
     width: 100%;
     padding: 0;
+}
+
+#home_slide {
+    height: 0px;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
 #news_slide {
