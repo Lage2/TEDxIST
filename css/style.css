@@ -51,7 +51,7 @@
     #header a {
         color: #E1E1E1;
         text-decoration: none;
-        font-size: larger;
+        font-size: medium;
     }
 
         #header a:hover {
@@ -67,6 +67,11 @@
     padding: 0;
     margin: 25px;
     height: 100px;
+}
+
+.speach-container p {
+    font-size: medium;
+    color:black;
 }
 
 .person-quote {
@@ -154,7 +159,7 @@
 /* Identifier Selectors*/
 
 
-#home_slide, #news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide {
+#home_slide, #news_slide, #speakers_slide, #history_slide, #sponsors_slide, #recruit_slide, #contacts_slide {
     overflow: hidden;
     width: 100%;
     padding: 0;
@@ -208,6 +213,16 @@
 
 #recruit_slide {
     background: url('../img/recruit1.jpg') 50% 0 no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    color: #fff;
+    height: 600px;
+    margin: 0;
+}
+
+#contacts_slide {
+    background: url('../img/contacts_slide.jpg') 50% 0 no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
