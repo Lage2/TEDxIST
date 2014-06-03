@@ -6,20 +6,23 @@
     <title>TEDxIST</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="js/init.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+    <script src="js/init.js"></script>
 </head>
 
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Jo&atilde;o Vieira</a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand fixed" rel="home" href="#" ><img src="./images/tedxMedia/TEDxISTwhite_small.png" /></a>
+
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#home_slide">Inicio</a></li>
@@ -90,7 +93,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="textslide">Diz-nos quem gostarias de ver na próxima edição do TEDxIST</h2>
-                    
+
                     <p><a class="btn btn-success" href="">Sugerir &raquo;</a></p>
                 </div>
             </div>
@@ -168,7 +171,7 @@
         </div>
     </section>
     <!-- Section #3 -->
-    <section id="about" data-speed="2" data-type="background">
+    <section id="recruit_slide" data-speed="2" data-type="background">
         <div class="container">
             <div class="page-header">
                 <h1>Juntem-se à nossa equipa!</h1>
@@ -180,29 +183,73 @@
                 </div><!-- /.span4 -->
             </div>
             <div class="container">
-                <h2>Testemunhos</h2>
                 <div class="row">
+                    <div class="col-md-12"><h2>Testemunhos</h2></div>
                     <div class="col-md-6">
-                        Franciso Gusmão<br>
+                        <img src="images/testemonials/franciscogusmao.jpg" style="border-radius: 90px; width:30%" />
+                        Franciso Gusmão<br><br>
                         "Foi óptimo trabalhar com toda a equipa do TEDxIST, e ter realizado um evento do qual tenho muito orgulho.
                         Sinto que conseguimos passar inspiração e criatividade,
                         o meu objectivo desde o primeiro dia de trabalho."
                     </div><!-- /.span4 -->
                     <div class="col-md-6">
-                        Jorge Saldanha<br>
+                        <img src="images/testemonials/jorgesaldanha.jpg" style="border-radius: 90px; width:30%" />
+
+                        Jorge Saldanha<br><br>
                         "O TEDxIST 2014 foi o primeiro evento que organizei. Foi um desafio gigante, mas que valeu a pena, sem qualquer dúvida.
                         Graças a uma equipa espetacular, com muito empenho, conseguimos realizar mais uma edição bem sucedida.
                         Espero que o interesse das pessoas se mantenha, este é um evento pensado por alunos e para alunos"
                     </div><!-- /.span4 -->
                     <div class="col-md-6">
-                        Rui Santos<br>
+                        <img src="images/testemonials/ruisantos.jpg" style="border-radius: 90px; width:30%" />
+                        Rui Santos<br><br>
                         "Os eventos TED e TEDx proporcionam experiências de interesse e criativas capazes de inspirar o mundo.
                         Conseguir fazer passar tudo isto pelo Técnico foi, também, uma experiência inesquecível e bem conseguida
                         graças a uma equipa de pessoas formidáveis."
                     </div><!-- /.span4 -->
                 </div>
             </div>
-</section>
+    </section>
+
+    <section id="contacts_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-md-12"><h2>Contactos</h2></div>-->
+                <div class="col-md-6">
+                    <div>
+                        <br>
+                        <h2>Localização</h2>
+                        <address>
+                            <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
+                            Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
+                            Salvo<br>
+                        </address>
+                        <p>
+                            <a href="mailto:info@tedxist.tecnico.ulisboa.pt" target="_blank" class="btn">
+                                Envie-nos um Email
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </p>
+                    </div>
+                    
+                </div><!-- /.span4 -->
+                <div class="col-md-6">
+                    <iframe width="100%" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=pt-PT&amp;geocode=&amp;q=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;aq=&amp;sll=38.995438,-9.141194&amp;sspn=1.135614,2.469177&amp;ie=UTF8&amp;hq=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;t=m&amp;cid=10559304975275012102&amp;hnear=&amp;ll=38.739021,-9.302588&amp;spn=0.026779,0.047207&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                </div><!-- /.span4 -->
+            </div>
+        </div>
+    </section>
+
+    <div class="navbar navbar-fixed-bottom navbar-inverse">
+
+        <div class="socialnetworks text-left">
+            <li class="fa fa-facebook-square fa-5x" onclick="OpenInNewTab('https://www.facebook.com/JoaoTVieira')"></li>
+            <li class="fa fa-github-square fa-5x" onclick="OpenInNewTab('https://github.com/ovieira')"></li>
+            <li class="fa fa-twitter-square fa-5x" onclick="OpenInNewTab('https://twitter.com/o_vieira')"></li>
+            <li class="fa fa-linkedin-square fa-5x" onclick="OpenInNewTab('https://www.linkedin.com/profile/view?id=217712133')"></li>
+            <li class="fa fa-instagram fa-5x" onclick="OpenInNewTab('http://instagram.com/o_vieira')"></li>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
