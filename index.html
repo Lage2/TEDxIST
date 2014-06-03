@@ -1,407 +1,247 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>TEDxIST</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/ink/ink.css">
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="./js/ink/holder.js"></script>
-    <script type="text/javascript" src="./js/ink/ink.min.js"></script>
-    <script type="text/javascript" src="./js/ink/ink-ui.min.js"></script>
-    <script type="text/javascript" src="./js/ink/autoload.js"></script>
-    <script type="text/javascript" src="./js/ink/html5shiv.js"></script>
-    <script type="text/javascript" src="./js/ink/ink.carousel.js"></script>
-
-    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('a[href*=#]').each(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    && location.hostname == this.hostname
-                    && this.hash.replace(/#/, '')) {
-                    var $targetId = $(this.hash),
-                    $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-
-                    if ($target) {
-                        var targetOffset = $target.offset().top;
-
-                        $(this).click(function () {
-                            $("#nav li a").removeClass("active");
-                            $(this).addClass('active');
-                            $('html, body').animate({ scrollTop: targetOffset }, 1000);
-                            return false;
-                        });
-                    }
-                }
-            });
-        });
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+    <script src="js/init.js"></script>
+    <script>
+        function OpenInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
     </script>
 </head>
 
 <body>
-    <!-- TopBar Fixed Position -->
-    <div class="topbar">
-        <header id="header">
-            <div>
-                <div id="logo"><a href=""><img src="./img/tedxMedia/TEDxISTwhite_small.png" style="width:50%" /></a></div>
-                <nav id="nav" class="ink-navigation menu">
-                    <ul class="horizontal menu flat">
-                        <li class="menu-item"><a href="#home_slide">Inicio</a></li>
-                        <!--<li class="menu-item"><a href="#news_slide">Novidades</a></li>-->
-                        <li class="menu-item"><a href="#speakers_slide">Oradores</a></li>
-                        <li class="menu-item"><a href="#history_slide">Edições Anteriores</a></li>
-                        <li class="menu-item"><a href="#sponsors_slide">Patrocínios</a></li>
-                        <li class="menu-item"><a href="#recruit_slide">Junta-te a nós!</a></li>
-                        <li class="menu-item"><a href="#contacts_slide">Contactos</a></li>
-                    </ul>
-                </nav>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand fixed" rel="home" href="#" ><img src="./images/tedxMedia/TEDxISTwhite_small.png" style="width:100%"/></a>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home_slide">Inicio</a></li>
+                    <li><a href="#intro_slide">Introdução</a></li>
+                    <li><a href="#speakers_slide">Oradores</a></li>
+                    <li><a href="#prevEditions_slide">Edições Anteriores</a></li>
+                    <li><a href="#sponsors_slide">Patrocínios</a></li>
+                    <li><a href="#recruit_slide">Junta-te a nós!</a></li>
+                    <li><a href="#contacts_slide">Contactos</a></li>
+                </ul>
             </div>
-        </header>
+        </div>
     </div>
 
-    <!-- Main container -->
-    <div class="main-container">
-        <!-- News -->
-        <div id="home_slide" class="back-slide">
+    <!-- Section #1 -->
+    <section data-speed="6" data-type="background" id="home_slide">
+        <div class="container">
+            <!--<h2>This page demonstrates parallax within Twitter Bootstrap.</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>-->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
-        <div>
-            <div class="ink-grid front-slide">
-                <div class="group-columns gutters">
-                    <!--<div class="large-100 medium-100 small-100">
-                        <h3>Diz-nos quem gostarias de ver na próxima edição do TEDxIST</h3>
-                        <a href="http://tinyurl.com/lg52y87"
-                           class="ink-button blue large-20 push-center my-button">
-                            Recomendar
+    </section>
+    <!-- Section #2 -->
+    <section id="intro_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>O que é o TEDx?</h2>
+                    No espírito das ideias que merecem ser espalhadas, o TED criou
+                    um programa chamado TEDx. O TEDx é um programa de eventos locais,
+                    auto-organizados que reúnem pessoas para partilharem uma experiência
+                    ao nível do TED. O nosso evento chama-se TEDxIST, onde x = evento
+                    TED organizado de forma independente.
+                    <br><br>
+                    No nosso evento TEDxIST vamos recorrer a vídeos de "TEDTalks" marcantes e à participação de
+                    oradores convidados, para induzir na audiência novas formas de
+                    pensar sobre os assuntos apresentados.
+                    <br><br>
+                    O TED fornece unicamente
+                    orientações gerais, embora, para cada evento TEDx, incluindo o
+                    nosso, a organização seja autónoma e independente.
+                    <p><a class="btn btn-success" href="http://www.ted.com/tedx">Mais informação &raquo;</a></p>
+                </div><!-- /.span4 -->
+                <div class="col-md-6">
+                    <h2>O que é o TEDxIST?</h2>
+                    O TEDxIST é organizado por alunos do Instituto Superior Técnico, com apoio do LAGE2 e de toda a comunidade do IST.
+                    Queremos trazer o espírito TED para a nossa comunidade e também atrair membros fora da nossa comunidade que queiram partilhar uma experiência única.
+                    <br><br>
+                    O TEDxIST está em plena sintonia com a missão do TED de espalhar ideias. Acreditamos no poder das ideias para mudar atitudes, vidas e, em última análise, o mundo.
+                    <br><br>
+                    O IST já organiza eventos TEDx desde 2009, começou com o nome TEDxIST-Tagus, depois TEDxISTTagus e agora TEDxIST.
+                    <br><br>
+                    Esta será a 6ª edição e esperamos que o sucesso se repita.
+                </div><!-- /.span4 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="textslide">Diz-nos quem gostarias de ver na próxima edição do TEDxIST</h2>
+
+                    <p><a class="btn btn-success" href="">Sugerir &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevEditions_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <a href="http://tedxist.ist.utl.pt/">
+
+                            <h2 class="specialh2">Edição 2014</h2>
+                            <div class="carousel-caption">
+                                <!-- TODO: corrigir depois da migração -->
+                            </div>
                         </a>
-                    </div>-->
-                    <div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <h2>O que é o TEDx?</h2>
-                            <p class="person-quote">
-                                No espírito das ideias que merecem ser espalhadas, o TED criou
-                                um programa chamado TEDx. O TEDx é um programa de eventos locais,
-                                auto-organizados que reúnem pessoas para partilharem uma experiência
-                                ao nível do TED. O nosso evento chama-se TEDxIST, onde x = evento
-                                TED organizado de forma independente.
-                                <br><br>
-                                No nosso evento TEDxIST vamos recorrer a vídeos de "TEDTalks" marcantes e à participação de
-                                oradores convidados, para induzir na audiência novas formas de
-                                pensar sobre os assuntos apresentados.
-                                <br><br>
-                                O TED fornece unicamente
-                                orientações gerais, embora, para cada evento TEDx, incluindo o
-                                nosso, a organização seja autónoma e independente.
-                            </p>
-                            <div>
-                                <img class="person-thumbnail" src="" align="right" style="width:0" />
-                                <p class="person-name">
-                                    <a href="http://www.ted.com/tedx" target="_blank" class="ink-button black small-10 push-center my-button">
-                                        Saiba mais
-                                        informações sobre o TEDx!
-                                    </a>
-                                </p>
+                    </div>
+                    <div class="item">
+                        <a href="http://tedxist.ist.utl.pt/~tedxist.daemon/2013/">
+
+                            <h2 class="specialh2">Edição 2013</h2>
+                            <div class="carousel-caption">
+                                <!-- TODO: corrigir depois da migração -->
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <h2>O que é o TEDxIST?</h2>
-                            <p class="person-quote">
-                                O TEDxIST é organizado por alunos do Instituto Superior Técnico, com apoio do LAGE2 e de toda a comunidade do IST.
-                                Queremos trazer o espírito TED para a nossa comunidade e também atrair membros fora da nossa comunidade que queiram partilhar uma experiência única.
-                                <br><br>
-                                O TEDxIST está em plena sintonia com a missão do TED de espalhar ideias. Acreditamos no poder das ideias para mudar atitudes, vidas e, em última análise, o mundo.
-                                <br><br>
-                                O IST já organiza eventos TEDx desde 2009, começou com o nome TEDxIST-Tagus, depois TEDxISTTagus e agora TEDxIST.
-                                <br><br>
-                                Esta será a 6ª edição e esperamos que o sucesso se repita.
-                            </p>
-                            <div>
-                                <img class="person-thumbnail" src="" align="right" style="width:0" />
+                    <div class="item">
+                        <a href="http://tedxisttagus.ist.utl.pt/~tedxisttagus.daemon/tedx/tedx/TEDx.html">
+
+                            <h2 class="specialh2">Edição 2012</h2>
+                            <div class="carousel-caption">
+                                <!-- TODO: corrigir depois da migração -->
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <!--<div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <p class="person-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                            </p>
-                            <div>
-                                <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                                <p class="person-name">Insert name here</p>
+                    <div class="item">
+                        <a href="http://tedxisttagus.ist.utl.pt/~tedxisttagus.daemon/tedx/tedx/TEDx.html">
+
+                            <h2 class="specialh2">Edição 2010</h2>
+                            <div class="carousel-caption">
+                                <!-- TODO: corrigir depois da migração -->
                             </div>
-                        </div>
-                    </div>-->
-                    <!--<div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <p class="person-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                            </p>
-                            <div>
-                                <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                                <p class="person-name">Insert name here</p>
-                            </div>
-                        </div>
-                    </div>-->
+                        </a>
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="sponsors_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="textslide">Ajudem-nos a construir a próxima edição do TEDxIST</h2>
+
+                    <p><a class="btn btn-success" href="">Informação &raquo;</a></p>
                 </div>
             </div>
         </div>
-        <!-- News -->
-        <
-        <!--div id="news_slide" class="back-slide">
-            <h2>
-                <div class="greybg">
-                    <a id="news">Novidades</a>
-                </div>
-            </h2>
-        </div>
-        <div>
-            <div class="ink-grid front-slide">
-                <div class="group-columns gutters">
-                    <div class="large-100 medium-100 small-100">
-                    </div>
+    </section>
+    <!-- Section #3 -->
+    <section id="recruit_slide" data-speed="2" data-type="background">
+        <div class="container">
+            <div class="page-header">
+                <h1>Juntem-se à nossa equipa!</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Gostavas de ajudar na organização do próximo TEDxIST?</h2>
+                    <p><a class="btn btn-success">Informa-te &raquo;</a></p>
+                </div><!-- /.span4 -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><h2>Testemunhos</h2></div>
+                    <div class="col-md-6">
+                        <img src="images/testemonials/franciscogusmao.jpg" style="border-radius: 90px; width:30%" />
+                        Franciso Gusmão<br><br>
+                        "Foi óptimo trabalhar com toda a equipa do TEDxIST, e ter realizado um evento do qual tenho muito orgulho.
+                        Sinto que conseguimos passar inspiração e criatividade,
+                        o meu objectivo desde o primeiro dia de trabalho."
+                    </div><!-- /.span4 -->
+                    <div class="col-md-6">
+                        <img src="images/testemonials/jorgesaldanha.jpg" style="border-radius: 90px; width:30%" />
+
+                        Jorge Saldanha<br><br>
+                        "O TEDxIST 2014 foi o primeiro evento que organizei. Foi um desafio gigante, mas que valeu a pena, sem qualquer dúvida.
+                        Graças a uma equipa espetacular, com muito empenho, conseguimos realizar mais uma edição bem sucedida.
+                        Espero que o interesse das pessoas se mantenha, este é um evento pensado por alunos e para alunos"
+                    </div><!-- /.span4 -->
+                    <div class="col-md-6">
+                        <img src="images/testemonials/ruisantos.jpg" style="border-radius: 90px; width:30%" />
+                        Rui Santos<br><br>
+                        "Os eventos TED e TEDx proporcionam experiências de interesse e criativas capazes de inspirar o mundo.
+                        Conseguir fazer passar tudo isto pelo Técnico foi, também, uma experiência inesquecível e bem conseguida
+                        graças a uma equipa de pessoas formidáveis."
+                    </div><!-- /.span4 -->
                 </div>
             </div>
-        </div>-->
-        <!-- Speakers -->
-        <div id="speakers_slide" class="back-slide">
-            <h2>
-                <div class="greybg"><a id="speakers">Oradores</a></div>
-            </h2>
-        </div>
-        <div class="ink-grid front-slide">
-            <div class="group-columns gutters">
-                <div class="large-100 medium-100 small-100">
-                    <h3>Diz-nos quem gostarias de ver na próxima edição do TEDxIST</h3>
-                    <a href=""
-                       class="ink-button blue large-20 push-center my-button">
-                        Sugerir
-                    </a>
-                </div>
-            </div>
-        </div>
+    </section>
 
-
-        <!-- Previous Editions -->
-        <div id="history_slide" class="back-slide">
-            <h2>
-                <div class="greybg"><a id="previous">Edições Anteriores</a></div>
-            </h2>
-        </div>
-        <div class="ink-grid front-slide">
-            <div class="column-groups gutters">
-                <div class="large-100 medium-100 small-100">
-                    <div id="myCarousel"
-                         class="ink-carousel large-80 align-center"
-                         data-auto-advance="0" data-axix="x"
-                         data-initial-page="0" data-pagination="#myCarouselNav"
-                         data-swipe="true">
-                        <!-- the carousel stage and slides -->
-                        <ul class="stage column-group half-gutters">
-                            <li class="slide large-50 medium-100 small-100">
-                                <div>
-                                    <a href="http://tedxist.ist.utl.pt/">
-                                        <!-- TODO: corrigir depois da migração -->
-                                        <!--<img src="./img/prevEditions/TED2014.png" />-->
-                                        <p class="align-center edition-year">Edição 2014</p>
-                                    </a>
-
-                                </div>
-                            </li>
-                            <li class="slide large-50 medium-100 small-100">
-                                <div>
-                                    <a href="http://tedxist.ist.utl.pt/~tedxist.daemon/2013/">
-                                        <img src="./img/prevEditions/TED2013.png" />
-                                        <p class="align-center edition-year"> Edição 2013</p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="slide large-50 medium-100 small-100">
-                                <div>
-                                    <a href="http://tedxisttagus.ist.utl.pt/~tedxisttagus.daemon/tedx/tedx/TEDx.html">
-                                        <img src="./img/prevEditions/TED2012.png" />
-                                        <p class="align-center edition-year"> Edição 2012</p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="slide large-50 medium-100 small-100">
-                                <div>
-                                    <a href="http://tedxisttagus.ist.utl.pt/~tedxisttagus.daemon/tedx/tedx/TEDx.html">
-                                        <img src="./img/prevEditions/TED2010.png" />
-                                        <p class="align-center edition-year"> Edição 2010</p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="slide large-50 medium-100 small-100">
-                                <div>
-                                    <a href="http://tedxisttagus.ist.utl.pt/2010">
-                                        <img src="./img/prevEditions/TED2009.png" />
-                                        <p class="align-center edition-year"> Edição 2009</p>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- the carousel navigation -->
-                        <nav id="myCarouselNav" class="ink-navigation align-center">
-                            <ul class="pagination dotted grey"></ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sponsorships -->
-        <div id="sponsors_slide" class="back-slide">
-            <h2>
-                <div class="greybg"><a id="sponsor">Patrocínios</a></div>
-            </h2>
-        </div>
-        <div class="ink-grid front-slide">
-            <div class="column-groups gutters">
-                <div class="large-100 medium-100 small-100">
-                    <h3>Ajudem-nos a construir a próxima edição do TEDxIST</h3>
-                    <a href="mailto:info@tedxist.tecnico.ulisboa.pt"
-                       class="ink-button blue large-20 push-center my-button">
-                        Informação
-                    </a>
-                </div>
-                <div class="large-50 medium-50 small-100">
-                    <div class="speach-container">
-                        <p class="person-quote">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                        </p>
-                        <div>
-                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                            <p class="person-name">Insert name here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-50 medium-50 small-100">
-                    <div class="speach-container">
-                        <p class="person-quote">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                        </p>
-                        <div>
-                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                            <p class="person-name">Insert name here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-50 medium-50 small-100">
-                    <div class="speach-container">
-                        <p class="person-quote">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                        </p>
-                        <div>
-                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                            <p class="person-name">Insert name here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-50 medium-50 small-100">
-                    <div class="speach-container">
-                        <p class="person-quote">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                        </p>
-                        <div>
-                            <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                            <p class="person-name">Insert name here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Recruit -->
-        <div id="recruit_slide" class="back-slide">
-            <h2>
-                <div class="greybg"><a id="recruit">Junta-te a nós</a></div>
-            </h2>
-        </div>
-        <div class=" ink-grid front-slide">
-            <div class="column-groups gutters">
-                <div class="large-100 medium-100 small-100">
-                    <h3>Gostavas de ajudar na organização do próximo TEDxIST?</h3>
-                    <a href=""
-                       class="ink-button blue large-20 push-center my-button">
-                        Junta-te a nós
-                    </a>
-
-                </div>
-            </div>
-            <!--<div class="large-50 medium-50 small-100">
-                <div class="speach-container">
-                    <p class="person-quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                    </p>
+    <section id="contacts_slide" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-md-12"><h2>Contactos</h2></div>-->
+                <div class="col-md-6">
                     <div>
-                        <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                        <p class="person-name">Insert name here</p>
+                        <br>
+                        <h2>Localização</h2>
+                        <address>
+                            <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
+                            Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
+                            Salvo<br>
+                        </address>
+                        <p>
+                            <a href="mailto:info@tedxist.tecnico.ulisboa.pt" target="_blank" class="btn">
+                                Envie-nos um Email
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="large-50 medium-50 small-100">
-                <div class="speach-container">
-                    <p class="person-quote">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in magna urna. Vestibulum pellentesque nisl adipiscing justo tristique, nec vehicula diam aliquet. Ut libero justo, consequat vitae luctus id, congue.
-                    </p>
-                    <div>
-                        <img class="person-thumbnail" src="./img/unknown_person.gif" align="right" />
-                        <p class="person-name">Insert name here</p>
-                    </div>
-                </div>
-            </div>-->
-        </div>
-        <div id="contacts_slide" class="back-slide">
-            <h2>
-                <div class="greybg"><a id="contacts">Contactos</a></div>
-            </h2>
-        </div>
-        <div>
-            <div class="ink-grid front-slide">
-                <div class="group-columns gutters">
-                    <div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <div>
-                                <br>
-                                <h2>Localização</h2>
-                                <address>
-                                    <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
-                                    Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
-                                    Salvo<br>
-                                </address>
-                            </div>
-                            </p>
-                            <div>
-                                <img class="person-thumbnail" src="" align="right" style="width:0" />
-                                <p class="person-name">
-                                    <a href="mailto:info@tedxist.tecnico.ulisboa.pt" target="_blank" class="ink-button black small-10 push-center my-button">
-                                        Envie-nos um Email
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="large-50 medium-50 small-100">
-                        <div class="speach-container">
-                            <iframe width="100%" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=pt-PT&amp;geocode=&amp;q=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;aq=&amp;sll=38.995438,-9.141194&amp;sspn=1.135614,2.469177&amp;ie=UTF8&amp;hq=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;t=m&amp;cid=10559304975275012102&amp;hnear=&amp;ll=38.739021,-9.302588&amp;spn=0.026779,0.047207&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-
-                            <div>
-                                <img class="person-thumbnail" src="" align="right" style="width:0" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="large-80 medium-100 small-100">
+                </div><!-- /.span4 -->
+                <div class="col-md-6">
+                    <iframe width="100%" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=pt-PT&amp;geocode=&amp;q=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;aq=&amp;sll=38.995438,-9.141194&amp;sspn=1.135614,2.469177&amp;ie=UTF8&amp;hq=Instituto+Superior+T%C3%A9cnico+-+U.+T.+L.+-+Campus+Taguspark,+Portugal&amp;t=m&amp;cid=10559304975275012102&amp;hnear=&amp;ll=38.739021,-9.302588&amp;spn=0.026779,0.047207&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                </div><!-- /.span4 -->
+                <div class="col-md-12">
                         <div class="speach-container">
                             <div class="span12">
                                 <br>
@@ -409,7 +249,7 @@
                                 <ul class="media-list">
                                     <li class="media">
                                         <div class="media">
-                                            <a class="pull-left"> <img class="media-object" src="img/icons/comboio.png"></a>
+                                            <i class="pull-left"> <img src="images/icons/comboio.png"></i>
                                             <div class="media-body">
                                                 <h4 class="media-heading">Comboio</h4>
                                                 <p>
@@ -425,7 +265,7 @@
                                     </li>
                                     <li class="media">
                                         <div class="media">
-                                            <a class="pull-left"> <img class="media-object" src="img/icons/bus.png"></a>
+                                            <a class="pull-left"> <img src="images/icons/bus.png"></a>
                                             <div class="media-body">
                                                 <h4 class="media-heading">Vimeca</h4>
                                                 <p>
@@ -461,7 +301,7 @@
                                     </li>
                                     <li class="media">
                                         <div class="media">
-                                            <a class="pull-left"> <img class="media-object" src="img/icons/taxi.png"></a>
+                                            <a class="pull-left"> <img src="images/icons/taxi.png"></a>
                                             <div class="media-body">
                                                 <h4 class="media-heading">Táxi</h4>
                                                 <p>
@@ -475,7 +315,7 @@
                                     </li>
                                     <li class="media">
                                         <div class="media">
-                                            <a class="pull-left"> <img class="media-object" src="img/icons/carro.png"></a>
+                                            <a class="pull-left"> <img src="images/icons/carro.png"></a>
                                             <div class="media-body">
                                                 <h4 class="media-heading">Carro</h4>
                                                 <p>
@@ -496,42 +336,25 @@
                                 <img class="person-thumbnail" src="" align="right" style="width:0" />
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <div class="navbar navbar-fixed-bottom navbar-inverse">
+
+        <div class="socialnetworks text-left">
+            <li class="fa fa-facebook-square fa-5x" onclick="OpenInNewTab('https://www.facebook.com/TEDxIST')"></li>
+            <li class="fa fa-twitter-square fa-5x" onclick="OpenInNewTab('https://twitter.com/TEDxIST')"></li>
+            <li class="fa fa-youtube-square fa-5x" onclick="OpenInNewTab('https://www.youtube.com/channel/UCEWM5ZcpzUZlY_Rf9Tj503A')"></li>
+            <li class="fa fa-flickr fa-5x" onclick="OpenInNewTab('https://www.flickr.com/photos/tedxist/')"></li>
         </div>
     </div>
 
-    <footer class="footer">
-        <div>
-            <div class="columns-groups">
-                <div class="large-50">
-                    <nav class="ink-navigation">
-                        <ul class="menu horizontal">
-                            <li class="icon-button">
-                                <a href="https://www.youtube.com/channel/UCEWM5ZcpzUZlY_Rf9Tj503A">
-                                    <i class="icon-youtube-play icon-2x"></i>
-                                </a>
-                            </li>
-                            <li class="icon-button">
-                                <a href="https://www.facebook.com/TEDxIST">
-                                    <i class="icon-facebook-sign icon-2x"></i>
-                                </a>
-                            </li>
-                            <li class="icon-button">
-                                <a href="https://twitter.com/TEDxIST">
-                                    <i class="icon-twitter-sign icon-2x"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="large-50">
-                    <p class="small vspace content-right">
-                        &copy <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
