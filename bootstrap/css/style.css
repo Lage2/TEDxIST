@@ -146,7 +146,7 @@
     font-size: x-large;
 }
 
-.navbar-brand { max-height: 40px; overflow: visible;padding-top: 0;padding-bottom: 0; }
+.navbar-brand { max-width:200px;max-height: 40px; overflow: visible;padding-top: 5px;padding-bottom: 0; position:absolute}
 
 /* Class Selectors */
 
