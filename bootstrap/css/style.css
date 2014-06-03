@@ -1,6 +1,6 @@
 #home_slide {
     background: url(../images/main1.jpg) 50% 0 fixed;
-    background-size:cover;
+    background-size: cover;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -9,19 +9,31 @@
     padding: 100px 0;
 }
 
-#intro_slide { 
-			background-color:white;
-			height: auto;  
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
-		    box-shadow: 0 1px 3px rgba(0,0,0,.25);
-		    padding: 200px 0;
+#intro_slide {
+    background: url(../images/intro.png) 50% 0 fixed;
+    background-color: white;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    padding: 200px 0;
 }
 
 #speakers_slide {
     background: url(../images/speakers1.jpg) 50% 0 fixed;
-    background-size:cover;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+
+#sponsors_slide {
+    background: url(../images/sponsor1.jpg) 50% 0 fixed;
+    background-size: cover;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -31,7 +43,7 @@
 }
 
 #prevEditions_slide {
-    background-size:cover;
+    background: url(../images/intro.png) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -51,23 +63,26 @@
     color: #fff;
 }
 
-.specialh2{
-    margin: 0;     
+.specialh2 {
+    margin: 0;
     color: #666;
     padding-top: 90px;
     font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;    
+    font-family: "trebuchet ms", sans-serif;
 }
-.item{
-    background: #333;    
+
+.item {
+    background: #333;
     text-align: center;
     height: 300px !important;
 }
-.carousel{
+
+.carousel {
     margin-top: 20px;
 }
-.bs-example{
-	margin: 20px;
+
+.bs-example {
+    margin: 20px;
 }
 
 .post-content {
@@ -95,10 +110,10 @@
     background-color: black;
 }
 
-.textslide{
-    background:rgba(255,255,255,0.5);
+.textslide {
+    background: rgba(255,255,255,0.5);
     border-radius: 10px;
-    color:black;
+    color: black;
     font-size: x-large;
 }
 
