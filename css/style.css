@@ -166,7 +166,9 @@
 }
 
 #home_slide {
-    height: 0px;
+    background: url('../img/main1.jpg') 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 900px;
     margin: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
