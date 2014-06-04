@@ -12,10 +12,19 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
     <script src="js/init.js"></script>
     <script>
+
+        function scroll(s) {
+            $('html, body').animate({
+                scrollTop: $(s).offset().top
+            }, 3000);
+        }
+
         function OpenInNewTab(url) {
             var win = window.open(url, '_blank');
             win.focus();
         }
+
+        
     </script>
 </head>
 
@@ -31,13 +40,13 @@
 
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home_slide">Inicio</a></li>
-                    <li><a href="#intro_slide">Introdução</a></li>
-                    <li><a href="#speakers_slide">Oradores</a></li>
-                    <li><a href="#prevEditions_slide">Edições Anteriores</a></li>
-                    <li><a href="#sponsors_slide">Patrocínios</a></li>
-                    <li><a href="#recruit_slide">Junta-te a nós!</a></li>
-                    <li><a href="#contacts_slide">Contactos</a></li>
+                    <li class="active" onclick="scroll('#home_slide')"><a href="#">Inicio</a></li>
+                    <li onclick="scroll('#intro_slide')"><a href="#">Introdução</a></li>
+                    <li onclick="scroll('#speakers_slide')"><a href="#">Oradores</a></li>
+                    <li onclick="scroll('#prevEditions_slide')"><a href="#">Edições Anteriores</a></li>
+                    <li onclick="scroll('#sponsors_slide')"><a href="#">Patrocínios</a></li>
+                    <li onclick="scroll('#recruit_slide')"><a href="#">Junta-te a nós!</a></li>
+                    <li onclick ="scroll('#contacts_slide')"><a href="#">Contactos</a></li>
                 </ul>
             </div>
         </div>
