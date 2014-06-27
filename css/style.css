@@ -151,20 +151,7 @@
 /* Class Selectors */
 
 /*** Header ***/
-#nav {
-    right: 0;
-    margin-top: -5px;
-    height: 20px;
-    position: absolute;
-    /*width: 100%;*/
-}
 
-    #nav ul {
-        list-style: none;
-        display: block;
-        margin: 0 auto;
-        height: 100%;
-    }
 
 #logo a {
     text-decoration: none;
